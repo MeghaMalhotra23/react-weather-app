@@ -1,0 +1,24 @@
+.tile{
+height: 50px;
+width: 100px;
+color: white;
+text-transform: uppercase;
+padding: 20px;
+margin: 10px;
+padding-top: 40px;
+background-color:#095;
+position: relative;
+font-size: 1em;
+text-emphasis: bold;
+cursor: pointer;
+transition: all 0.2s ease-in-out;
+border-radius: 10%;
+filter: drop-shadow(10px 10px 4px #000000);
+}
+.tile:hover{
+transform: scale(1.1);
+}
+.left{
+    float: left;
+}
+

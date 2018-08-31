@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+  background-image: url("./beach-boat-colorful-33545.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 680px;
+  height: 680px;
+  overflow: hidden;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.clearfix::after{
+content: "";
+clear: both;
+display: table;
+}
+.container{
+  margin: 50px auto;
+  width: 50%;
+}
+
+

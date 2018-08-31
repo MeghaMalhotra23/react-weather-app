@@ -1,0 +1,14 @@
+.view-temp{
+    width: 50%;
+    margin: 0 auto;
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    filter: drop-shadow(10px 10px 4px #000000);
+    border-radius: 10%;
+    animation: slide 2s;
+}
+@keyframes slide{
+    from{height: 0px;}
+    to{height: 50px;}
+}
