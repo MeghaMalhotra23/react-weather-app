@@ -1,15 +1,18 @@
 
 import React from 'react';
 import './ViewTemp.css';
-export class DataValid extends React.Component{
-    
-render(){
-    
+export const DataValid =(props)=>{
+    let temp;
+    if(props.data.currently.temperature)
+        temp=parseInt((parseInt(props.data.currently.temperature)-32)*5/9);
 return(
     <div className="view-temp">
-        {props.data.latitude}
-        {props.data.currently.summary}
-       {props.data.cuurrently.temperature}
+        <div className="temp">
+        Temperature: {temp} °C
+        </div>
+        <div className="summary">
+        Summary: {props.data.currently.summary}
+        </div>
     </div>
-)}
+)
 }
