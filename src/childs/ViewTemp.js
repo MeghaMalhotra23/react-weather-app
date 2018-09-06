@@ -5,17 +5,16 @@ import {DataValid} from './dataValid';
 export class ViewTemp extends React.Component{ 
 
     render(){
-        let dataAvaiable;
+        let dataAvailable;
         if(this.props.z){
-            console.log(this.props.z);
-            dataAvaiable=<DataValid data={this.props.z}/>;
+            dataAvailable=<DataValid data={this.props.z}/>;
         }
         else{
-            dataAvaiable="";
+            dataAvailable="";
         }
         return(
         <div>
-            {dataAvaiable}       
+            {dataAvailable}       
         </div>
     )
 }

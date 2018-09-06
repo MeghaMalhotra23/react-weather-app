@@ -13,16 +13,13 @@ class App extends Component {
       {name:'kolkata', lat:'22.5726', long:'88.3639'}]
     };
   }
-  activate=()=>{
-  
-  }
   render() {
     return (
       <div className="App">
        <AppHeader/>
         <div className="clearfix container">
-       {this.state.city.map((value,i)=>{
-         return <Tile key={value.name} dataObj={value}  isActive={this.activate.bind(this)}/>
+       {this.state.city.map((value)=>{
+         return <Tile key={value.name} dataObj={value} />
        })}
        </div>
        <ViewTemp/>
